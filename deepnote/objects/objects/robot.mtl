@@ -1,0 +1,6 @@
+# File created by ZBrush
+# ToolType: PolyMesh3D
+# www.zbrush.com
+
+newmtl defaultMat
+Kd 0.1 0. 1.0  # Red color

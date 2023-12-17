@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+
+  <model name="pitch">
+    <link name="pitch_link">
+      <inertial>
+        <mass>200</mass>
+        <inertia>
+          <ixx>0.79</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.53</iyy>
+          <iyz>0</iyz>
+          <izz>1.2</izz>
+        </inertia>
+      </inertial>
+    <visual name="bottom">
+        <pose>0.0 0.0 0.445 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>25 70 .05</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.4 0.9 0.3 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="bottom">
+        <pose>0.0 0.0 0.445 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>25 70 .05</size>
+          </box>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:compliant_hydroelastic/>
+          <drake:hydroelastic_modulus>1.0e6</drake:hydroelastic_modulus>
+        </drake:proximity_properties>
+      </collision>
+    </link>
+    <frame name="pitch_center">
+      <pose relative_to="pitch_link">0 0 0.47 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>
