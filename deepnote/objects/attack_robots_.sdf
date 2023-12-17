@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<sdf xmlns:drake="http://drake.mit.edu" version="1.8">
+  <model name='attack_robots_'>
+    <link name='attack_robots_'>
+      <inertial>
+        <pose>-3.077179771770224e-06 -0.45388340645431996 -0.48990886507991704 0 0 0</pose>
+        <mass>1.728014228187</mass>
+        <inertia>
+          <ixx>43189.66472126854</ixx>
+          <ixy>-0.08688471060538137</ixy>
+          <ixz>-0.010268644221425227</ixz>
+          <iyy>4960.0416803185135</iyy>
+          <iyz>-744.7344607117735</iyz>
+          <izz>46110.15208359764</izz>
+        </inertia>
+      </inertial>
+      <visual name='visual'>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>attack_robots_.OBJ</uri>
+            <scale>0.15 0.15 0.15</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
